@@ -5,6 +5,7 @@ const db = config.get('mongoURI');
 const connectDB = async () => {
     try {
         await mongoose.connect(db, {
+            // Due to deprecated URL parser
             useNewUrlParser: true
         });
         console.log('Mongo DB connected!');
