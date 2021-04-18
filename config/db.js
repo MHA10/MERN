@@ -6,7 +6,9 @@ const connectDB = async () => {
     try {
         await mongoose.connect(db, {
             // Due to deprecated URL parser
-            useNewUrlParser: true
+            useNewUrlParser: true,
+            useCreateIndex: true,
+            useUnifiedTopology: true
         });
         console.log('Mongo DB connected!');
     } catch (err) {
