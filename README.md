@@ -1,1 +1,1 @@
-# MERN
+# MERN Boiler Template
